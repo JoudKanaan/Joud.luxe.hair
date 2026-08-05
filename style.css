@@ -2197,3 +2197,37 @@ font-size:2.5rem;
         font-size: 14px;
     }
 }
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .features {
+        padding: 60px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .feature h3 {
+        font-size: 32px;
+    }
+
+    .feature p {
+        font-size: 18px;
+    }
+
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
