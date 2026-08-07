@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+ 
 <header class="header" id="header">
 
     <img class="logo" src="Images/3ca42b45-1911-49f8-a15d-68932380a4a7.png" alt="Joud Luxe Hair">
@@ -119,9 +119,8 @@
 
     <div class="about-image">
 
-       <img class="about-logo"
-     src="Images/6aafab10-91a2-4ce9-9dd5-2d580e0d5264.png"
-     alt="Joud Luxe Hair">
+        <img src="Images/6aafab10-91a2-4ce9-9dd5-2d580e0d5264.png" alt="Joud Luxe Hair">
+
     </div>
 
 
@@ -578,34 +577,12 @@ window.addEventListener("scroll", function(){
 
 <div id="loader">
 
-    <div class="loader-content">
-
-        <img src="Images/3ca42b45-1911-49f8-a15d-68932380a4a7.png" alt="Joud Luxe Hair">
-
-        <h1>JOUD LUXE HAIR</h1>
-
-        <div class="gold-line"></div>
-
-    </div>
-
 </div>
 
 
 </div>
 
-<script>
 
-window.addEventListener("load", function(){
-
-    setTimeout(function(){
-
-        document.getElementById("loader").classList.add("hidden");
-
-    },1800);
-
-});
-
-</script>
 <script>
 
 const galleryImages = document.querySelectorAll(".gallery-item img");
@@ -648,10 +625,36 @@ lightbox.addEventListener("click", function(e){
 });
 
 
-
 </script>
 
-</body>
+</div>
+<div class="lightbox">
 
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img" src="" alt="">
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
+
+...
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+
+</body>
 </html>
+
 
